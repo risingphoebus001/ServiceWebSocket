@@ -96,7 +96,7 @@
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Link>
-      <AdditionalOptions>-lssl -lcrypto -lz -lpthread  -lboost_system -lprotobuf %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>-lssl -lcrypto -lz -lpthread  -lboost_system -lprotobuf -pthread %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
